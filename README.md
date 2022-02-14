@@ -2,13 +2,12 @@
 $40 Stereo Wifi Speaker appliance
 
 This is a recipe for a wifi speaker appliance you can use to play music from your computer to some remote pair of speakers on the other side of the house.
-I will be using it to listen to streaming Web music when I do chores in the kitchen. Requisite scripts and configuration files are included, and there's
-not a lot to it. You will need a Linux desktop to host the streaming client, or some other way of capturing your streaming service's audio output
-and retransmitting it on your LAN with the RTP protocol.
+I will be using it to listen to streaming Web music when I do chores in the kitchen, but it should accept audio from any RTP source. Requisite scripts and
+configuration files are included, and there's not a lot to it. You will need a Linux desktop to host the streaming client, or some other way of capturing your streaming service's audio output to retransmit it to your LAN with the RTP protocol.
 
 Prerequisites:
-- A Wifi router. I used the classic Raspberry Pi Zero and I found it necessary to downgrade to 802.11n, but that works fine for me
-- A Linux Desktop with Pulseaudio or some other system that will stream Internet music and output it via RTP protocol
+- A Wifi router. I found it necessary to downgrade to 802.11n to accomodate the Pi Zero, but that works fine for me
+- A Linux Desktop with Pulseaudio or some other means of transmitting an RTP stream to the Pi
 - The Linux Desktop or other RTP source must be able to connect to the router and transmit to wireless clients, whether by cable or wireless
 - A USB hub for connecting a temporary console to the Pi, for setup
 
