@@ -1,5 +1,5 @@
 # jukebrick
-$30 Stereo Wifi Speaker appliance
+$40 Stereo Wifi Speaker appliance
 
 This is a recipe for a wifi speaker appliance you can use to play music from your computer to some remote pair of speakers on the other side of the house.
 I will be using it to listen to streaming Web music when I do chores in the kitchen. Requisite scripts and configuration files are included, and there's
