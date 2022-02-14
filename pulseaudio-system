@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+case "$1" in
+
+start)
+	sleep 10
+	/usr/bin/pulseaudio --system --disallow-exit -nF /etc/pulse/system.pa &
+	;;
+stop)
+	killall /usr/bin/pulseaudio
+	;;
+
+restart)
+	"$0" stop
+	"$0" start
+	;;
+
+reload)
+	"$0" restart
+	;;
+esac
+
+
